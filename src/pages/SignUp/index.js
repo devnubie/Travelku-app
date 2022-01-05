@@ -7,15 +7,18 @@ const SignUp = ({navigation}) => {
     <View style={styles.page}>
       <HeaderWhite title="Sign Up" titleColor="#FFFFFF" onBack={() => {}} />
       <View style={styles.container}>
-        <TextInput label="Name" placeholder="type your name here" />
+        <View style={styles.titleContainer}>
+          <Text style={styles.title}>Travelku</Text>
+        </View>
+        <TextInput label="Full Name" placeholder="ex.john de pendeho" />
         <Gap height={16} />
-        <TextInput label="Email" placeholder="type your email here" />
+        <TextInput label="Email" placeholder="ex.john@gmail.com" />
         <Gap height={16} />
         <TextInput label="password" placeholder="type your password here" />
         <Gap height={26} />
         <View>
           <Text style={styles.text}>
-            Hey you almost done !, Just click sign Up and the journey will begin{' '}
+            Hey you almost done !, Just click sign up and the journey will begin{' '}
           </Text>
         </View>
         <Gap height={15} />
@@ -48,5 +51,13 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 14,
     color: '#FFFFFF',
+  },
+  title: {
+    color: '#FFFFFF',
+    fontSize: 24,
+  },
+  titleContainer: {
+    alignItems: 'center',
+    marginBottom: 20,
   },
 });
