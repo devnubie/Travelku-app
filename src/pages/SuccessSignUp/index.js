@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, View, Image} from 'react-native';
-import successImg from '../../assets/img/success-ilu.png';
+import successImg from '../../assets/img/Success.svg';
 import {Button} from '../../components';
 
 const SuccessSignUp = ({navigation}) => {
@@ -45,6 +45,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     color: '#355C7D',
     fontWeight: 'bold',
+    paddingTop: 35,
   },
   contentContainer: {
     flex: 1,
