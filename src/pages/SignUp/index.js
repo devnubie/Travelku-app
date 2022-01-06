@@ -23,7 +23,12 @@ const SignUp = ({navigation}) => {
         </View>
         <Gap height={15} />
         <View style={styles.button}>
-          <Button color="#68FF33" text="Sign Up" textColor="#355C7D" />
+          <Button
+            color="#68FF33"
+            text="Sign Up"
+            textColor="#355C7D"
+            onPress={() => navigation.navigate('SuccessSignUp')}
+          />
         </View>
       </View>
     </View>
