@@ -18,8 +18,8 @@ const SuccessSignUp = ({navigation}) => {
             text="continue"
             color="#68FF33"
             textColor="#355C7D"
-            onPress={() => navigation.navigate('Home')}
             style={styles.btn}
+            onPress={() => navigation.replace('Home')}
           />
         </View>
       </View>
