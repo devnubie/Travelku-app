@@ -10,13 +10,14 @@ import {
   SplashScreen,
   SuccessSignUp,
 } from '../pages';
+import BottomNavigator from '../components/molecules/BottomNavigator';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
 const MainApp = () => {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator tabBar={props => <BottomNavigator {...props} />}>
       <Tab.Screen name="Home" component={Home} options={{headerShown: false}} />
       <Tab.Screen
         name="History"
@@ -35,7 +36,7 @@ const MainApp = () => {
 const Router = () => {
   return (
     <Stack.Navigator>
-      <Stack.Screen
+      {/* <Stack.Screen
         name="SplashScreen"
         component={SplashScreen}
         options={{headerShown: false}}
@@ -57,7 +58,7 @@ const Router = () => {
         name="SuccessSignUp"
         component={SuccessSignUp}
         options={{headerShown: false}}
-      />
+      /> */}
       <Stack.Screen
         name="MainApp"
         component={MainApp}
