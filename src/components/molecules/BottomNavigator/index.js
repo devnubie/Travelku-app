@@ -61,7 +61,6 @@ const BottomNavigator = ({state, descriptors, navigation}) => {
             onPress={onPress}
             onLongPress={onLongPress}>
             <Icon label={label}/>
-            {/* <Text>{label}</Text> */}
           </TouchableOpacity>
         );
       })}
