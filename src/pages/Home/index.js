@@ -8,10 +8,9 @@ import Ticket from '../../assets/img/ticket.png';
 import Calendar from '../../assets/img/calendar.png';
 import Search from '../../assets/img/search.png';
 
-
 const Home = () => {
   return (
-    <View style={{flex: 1}}>
+    <View style={{flex: 1, backgroundColor: 'white'}}>
       <View
         style={{
           paddingHorizontal: 20,
@@ -32,7 +31,7 @@ const Home = () => {
         </Text>
         <View
           style={{
-            marginHorizontal:160,
+            marginHorizontal: 160,
             // backgroundColor: 'green',
           }}>
           <Image source={Profile} style={{borderRadius: 10}} />
@@ -46,7 +45,10 @@ const Home = () => {
           borderTopLeftRadius: 10,
           borderTopRightRadius: 10,
           marginHorizontal: 20,
-        }}></View>
+          justifyContent:'center',
+        }}>
+        <Text style={{ paddingLeft:10,color:'#FFFFFF'}}>Menu</Text>
+      </View>
       {/* main content */}
       {/* container white */}
       <View
@@ -60,6 +62,8 @@ const Home = () => {
           paddingHorizontal: 30,
           borderBottomLeftRadius: 10,
           borderBottomRightRadius: 10,
+          borderColor: 'black',
+          borderWidth: 0.5,
         }}>
         {/* agent */}
         <TouchableOpacity>
@@ -126,14 +130,14 @@ const Home = () => {
                 height: 35,
                 borderRadius: 10,
               }}>
-              <Image source={Search}/>
+              <Image source={Search} />
             </View>
             <Text>Search</Text>
           </View>
         </TouchableOpacity>
       </View>
       {/* main content */}
-      <View style={{alignItems:'center'}}>
+      <View style={{alignItems: 'center'}}>
         <Image source={Banner} />
       </View>
     </View>
