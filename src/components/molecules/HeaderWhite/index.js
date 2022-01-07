@@ -34,7 +34,6 @@ const styles = StyleSheet.create({
     }),
 
     backIcon:{
-
         padding:13,
         marginleft:13,
     }, 

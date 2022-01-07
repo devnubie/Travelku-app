@@ -5,8 +5,8 @@ import Profile from '../../assets/img/profile.png';
 import Banner from '../../assets/img/welcome-banner.png';
 import Bus from '../../assets/img/bus.png';
 import Ticket from '../../assets/img/ticket.png';
-import Calendar from '../../assets/img/calendar.png';
 import Search from '../../assets/img/search.png';
+import Agent from '../../assets/img/agent.png';
 
 const Home = () => {
   return (
@@ -45,9 +45,9 @@ const Home = () => {
           borderTopLeftRadius: 10,
           borderTopRightRadius: 10,
           marginHorizontal: 20,
-          justifyContent:'center',
+          justifyContent: 'center',
         }}>
-        <Text style={{ paddingLeft:10,color:'#FFFFFF'}}>Menu</Text>
+        <Text style={{paddingLeft: 10, color: '#FFFFFF'}}>Menu</Text>
       </View>
       {/* main content */}
       {/* container white */}
@@ -77,7 +77,7 @@ const Home = () => {
                 height: 35,
                 borderRadius: 10,
               }}>
-              <Image source={Bus} />
+              <Image source={Agent} />
             </View>
             <Text>agent</Text>
           </View>
@@ -101,7 +101,7 @@ const Home = () => {
           </View>
         </TouchableOpacity>
 
-        {/* Schedule */}
+        {/* buy Ticket */}
         <TouchableOpacity>
           <View style={{alignItems: 'center'}}>
             <View
@@ -113,9 +113,9 @@ const Home = () => {
                 height: 35,
                 borderRadius: 10,
               }}>
-              <Image source={Calendar} />
+              <Image source={Bus} />
             </View>
-            <Text>schedule</Text>
+            <Text>Buy Ticket</Text>
           </View>
         </TouchableOpacity>
         {/* Search */}
