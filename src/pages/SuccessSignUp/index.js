@@ -19,7 +19,7 @@ const SuccessSignUp = ({navigation}) => {
             color="#68FF33"
             textColor="#355C7D"
             style={styles.btn}
-            onPress={() => navigation.replace('Home')}
+            onPress={() => navigation.replace('MainApp')}
           />
         </View>
       </View>
