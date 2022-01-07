@@ -17,18 +17,14 @@ const Tab = createBottomTabNavigator();
 const MainApp = () => {
   return (
     <Tab.Navigator>
-      <Tab.Screen 
-      name="Home" 
-      component={Home}
-      options={{headerShown: false}}
-      />
+      <Tab.Screen name="Home" component={Home} options={{headerShown: false}} />
       <Tab.Screen
-        name="CustomerService"
+        name="History"
         component={History}
         options={{headerShown: false}}
       />
       <Tab.Screen
-        name="History"
+        name="Profile"
         component={Profile}
         options={{headerShown: false}}
       />
@@ -39,7 +35,7 @@ const MainApp = () => {
 const Router = () => {
   return (
     <Stack.Navigator>
-      {/* <Stack.Screen
+      <Stack.Screen
         name="SplashScreen"
         component={SplashScreen}
         options={{headerShown: false}}
@@ -61,7 +57,7 @@ const Router = () => {
         name="SuccessSignUp"
         component={SuccessSignUp}
         options={{headerShown: false}}
-      /> */}
+      />
       <Stack.Screen
         name="MainApp"
         component={MainApp}
