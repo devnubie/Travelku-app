@@ -4,6 +4,10 @@ import Logo from '../../assets/img/Logo-biru.png';
 import Profile from '../../assets/img/profile.png';
 import Banner from '../../assets/img/welcome-banner.png';
 import Bus from '../../assets/img/bus.png';
+import Ticket from '../../assets/img/ticket.png';
+import Calendar from '../../assets/img/calendar.png';
+import Search from '../../assets/img/search.png';
+
 
 const Home = () => {
   return (
@@ -28,11 +32,8 @@ const Home = () => {
         </Text>
         <View
           style={{
+            marginHorizontal:160,
             // backgroundColor: 'green',
-            width: 40,
-            height: 40,
-            paddingHorizontal: 180,
-            paddingRight: -10,
           }}>
           <Image source={Profile} style={{borderRadius: 10}} />
         </View>
@@ -90,7 +91,7 @@ const Home = () => {
                 height: 35,
                 borderRadius: 10,
               }}>
-              <Image source={Bus} />
+              <Image source={Ticket} />
             </View>
             <Text>My ticket</Text>
           </View>
@@ -108,7 +109,7 @@ const Home = () => {
                 height: 35,
                 borderRadius: 10,
               }}>
-              <Image source={Bus} />
+              <Image source={Calendar} />
             </View>
             <Text>schedule</Text>
           </View>
@@ -125,14 +126,14 @@ const Home = () => {
                 height: 35,
                 borderRadius: 10,
               }}>
-              <Image source={Bus} />
+              <Image source={Search}/>
             </View>
             <Text>Search</Text>
           </View>
         </TouchableOpacity>
       </View>
       {/* main content */}
-      <View>
+      <View style={{alignItems:'center'}}>
         <Image source={Banner} />
       </View>
     </View>
