@@ -14,7 +14,7 @@ const SignIn = ({navigation}) => {
         <View style={styles.container}>
           <TextInput label="Email" placeholder="type your email here" />
           <Gap height={16} />
-          <TextInput label="password" placeholder="type your password here" />
+          <TextInput label="password" placeholder="type your password here" secureTextEntry />
           <Gap height={26} />
           <Button color="#68FF33" text="Sign In" textColor="#355C7D" />
           <Gap height={18} />

@@ -2,6 +2,7 @@ import React from 'react';
 import {StyleSheet, Text, View, ScrollView} from 'react-native';
 import {HeaderWhite, Gap, TextInput, Button} from '../../components';
 
+
 const SignUp = ({navigation}) => {
   return (
     <ScrollView>
@@ -16,7 +17,7 @@ const SignUp = ({navigation}) => {
             <Gap height={16} />
             <TextInput label="Email" placeholder="ex.john@gmail.com" />
             <Gap height={16} />
-            <TextInput label="password" placeholder="type your password here" />
+            <TextInput  label="password" placeholder="type your password here" secureTextEntry/>
             <Gap height={26} />
             <View>
               <Text style={styles.text}>
