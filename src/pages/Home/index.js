@@ -8,7 +8,7 @@ import Ticket from '../../assets/img/ticket.png';
 import Search from '../../assets/img/search.png';
 import Agent from '../../assets/img/agent.png';
 
-const Home = () => {
+const Home = ({navigation}) => {
   return (
     <View style={{flex: 1, backgroundColor: 'white'}}>
       <View
@@ -63,10 +63,10 @@ const Home = () => {
           borderBottomLeftRadius: 10,
           borderBottomRightRadius: 10,
           borderColor: 'black',
-          borderWidth: 0.5,
+          borderWidth: 0.5
         }}>
         {/* agent */}
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('Agent')}>
           <View style={{alignItems: 'center'}}>
             <View
               style={{

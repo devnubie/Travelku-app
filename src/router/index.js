@@ -9,6 +9,7 @@ import {
   SignUp,
   SplashScreen,
   SuccessSignUp,
+  Agent,
 } from '../pages';
 import BottomNavigator from '../components/molecules/BottomNavigator';
 
@@ -62,6 +63,11 @@ const Router = () => {
       <Stack.Screen
         name="MainApp"
         component={MainApp}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Agent"
+        component={Agent}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

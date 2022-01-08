@@ -1,63 +1,109 @@
 import React from 'react';
-import {StyleSheet, View, Image, Text, TouchableOpacity} from 'react-native';
+import {
+  StyleSheet,
+  View,
+  Image,
+  Text,
+  TouchableOpacity,
+  ScrollView,
+} from 'react-native';
 import HistoryTicket from '../../assets/img/ticket-history.png';
-import { Gap } from '../../components';
+import {Gap} from '../../components';
 
 const History = () => {
   return (
-    <View style={{flex: 1}}>
-      <View style={styles.titleContainer}>
-        <Text style={styles.title}>Your Journey history</Text>
+    <ScrollView>
+      <View>
+        <View style={styles.titleContainer}>
+          <Text style={styles.title}>Your Journey history</Text>
+        </View>
+        <Gap height={10} />
+        {/* item pertama */}
+        <View style={styles.box}>
+          <View style={styles.containerImg}>
+            <Image source={HistoryTicket} />
+          </View>
+          <View>
+            <Text style={styles.content}>Baraya</Text>
+            <Text style={styles.content}>Bandung - malang</Text>
+            <Text style={styles.content}>24 Januari 2020</Text>
+          </View>
+        </View>
+        <Gap height={20} />
+        {/* item pertama */}
+        <View style={styles.box}>
+          <View style={styles.containerImg}>
+            <Image source={HistoryTicket} />
+          </View>
+          <View>
+            <Text style={styles.content}>Damri</Text>
+            <Text style={styles.content}>malang - bandung</Text>
+            <Text style={styles.content}>24 maret 2020</Text>
+          </View>
+        </View>
+        <Gap height={20} />
+        {/* item pertama */}
+        <View style={styles.box}>
+          <View style={styles.containerImg}>
+            <Image source={HistoryTicket} />
+          </View>
+          <View>
+            <Text style={styles.content}>Baraya</Text>
+            <Text style={styles.content}>Bandung - Jakarta</Text>
+            <Text style={styles.content}>1 Januari 2021</Text>
+          </View>
+        </View>
+        <Gap height={20} />
+        {/* item pertama */}
+        <View style={styles.box}>
+          <View style={styles.containerImg}>
+            <Image source={HistoryTicket} />
+          </View>
+          <View>
+            <Text style={styles.content}>Travelpedia</Text>
+            <Text style={styles.content}>Jakarta - Bandung</Text>
+            <Text style={styles.content}>24 Januari 2021</Text>
+          </View>
+        </View>
+        <Gap height={20} />
+        {/* item pertama */}
+        <View style={styles.box}>
+          <View style={styles.containerImg}>
+            <Image source={HistoryTicket} />
+          </View>
+          <View>
+            <Text style={styles.content}>Travelpedia</Text>
+            <Text style={styles.content}>Jakarta - Bandung</Text>
+            <Text style={styles.content}>24 Januari 2021</Text>
+          </View>
+        </View>
+        <Gap height={20} />
+        {/* item pertama */}
+        <View style={styles.box}>
+          <View style={styles.containerImg}>
+            <Image source={HistoryTicket} />
+          </View>
+          <View>
+            <Text style={styles.content}>Travelpedia</Text>
+            <Text style={styles.content}>Jakarta - Bandung</Text>
+            <Text style={styles.content}>24 Januari 2021</Text>
+          </View>
+        </View>
+        <Gap height={20} />
+        {/* item pertama */}
+        <View style={styles.box}>
+          <View style={styles.containerImg}>
+            <Image source={HistoryTicket} />
+          </View>
+          <View>
+            <Text style={styles.content}>Travelpedia</Text>
+            <Text style={styles.content}>Jakarta - Bandung</Text>
+            <Text style={styles.content}>24 Januari 2021</Text>
+          </View>
+        </View>
+        <Gap height={20} />
       </View>
-      <Gap height={50}/>
-      {/* item pertama */}
-      <View style={styles.box}>
-        <View style={styles.containerImg}>
-          <Image source={HistoryTicket} />
-        </View>
-        <View>
-          <Text style={styles.content}>Baraya</Text>
-          <Text style={styles.content}>Bandung - malang</Text>
-          <Text style={styles.content}>24 Januari 2020</Text>
-        </View>
-      </View>
-      <Gap height={20}/>
-      {/* item pertama */}
-      <View style={styles.box}>
-        <View style={styles.containerImg}>
-          <Image source={HistoryTicket} />
-        </View>
-        <View>
-          <Text style={styles.content}>Damri</Text>
-          <Text style={styles.content}>malang - bandung</Text>
-          <Text style={styles.content}>24 maret 2020</Text>
-        </View>
-      </View>
-      <Gap height={20}/>
-      {/* item pertama */}
-      <View style={styles.box}>
-        <View style={styles.containerImg}>
-          <Image source={HistoryTicket} />
-        </View>
-        <View>
-          <Text style={styles.content}>Baraya</Text>
-          <Text style={styles.content}>Bandung - Jakarta</Text>
-          <Text style={styles.content}>1 Januari 2021</Text>
-        </View>
-      </View>
-      <Gap height={20}/>
-      {/* item pertama */}
-      <View style={styles.box}>
-        <View style={styles.containerImg}>
-          <Image source={HistoryTicket} />
-        </View>
-        <View>
-          <Text style={styles.content}>Travelpedia</Text>
-          <Text style={styles.content}>Jakarta - Bandung</Text>
-          <Text style={styles.content}>24 Januari 2021</Text>
-        </View>
-      </View>
-    </View>
+    </ScrollView>
   );
 };
 
