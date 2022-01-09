@@ -2,12 +2,15 @@ import React from 'react';
 import {StyleSheet, Text, View, ScrollView} from 'react-native';
 import {HeaderWhite, Gap, TextInput, Button} from '../../components';
 
-
 const SignUp = ({navigation}) => {
   return (
     <ScrollView>
       <View style={styles.page}>
-        <HeaderWhite title="Sign Up" titleColor="#FFFFFF" onBack={() => {}} />
+        <HeaderWhite
+          title="Sign Up"
+          titleColor="#FFFFFF"
+          onBack={()=>navigation.goBack()}
+        />
         <View style={styles.container}>
           <View style={styles.titleContainer}>
             <Text style={styles.title}>Travelku</Text>
@@ -17,7 +20,11 @@ const SignUp = ({navigation}) => {
             <Gap height={16} />
             <TextInput label="Email" placeholder="ex.john@gmail.com" />
             <Gap height={16} />
-            <TextInput  label="password" placeholder="type your password here" secureTextEntry/>
+            <TextInput
+              label="password"
+              placeholder="type your password here"
+              secureTextEntry
+            />
             <Gap height={26} />
             <View>
               <Text style={styles.text}>
@@ -31,7 +38,7 @@ const SignUp = ({navigation}) => {
                 color="#68FF33"
                 text="Sign Up"
                 textColor="#355C7D"
-                onPress={() => navigation.navigate('SuccessSignUp')}
+                onPress={() => navigation.replace('SuccessSignUp')}
               />
             </View>
           </View>

@@ -1,3 +1,4 @@
+import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
 import {
   StyleSheet,
@@ -8,12 +9,17 @@ import {
   ScrollView,
 } from 'react-native';
 import HistoryTicket from '../../assets/img/ticket-history.png';
-import {Gap} from '../../components';
+import {Gap, HeaderBlue} from '../../components';
 
-const History = () => {
+const History = ({navigation}) => {
   return (
-    <ScrollView>
-      <View>
+    <View>
+      <HeaderBlue
+        title="History Purchase"
+        titleColor="#355c7d"
+        onBack={() => navigation.goBack()}
+      />
+      <ScrollView>
         <View style={styles.titleContainer}>
           <Text style={styles.title}>Your Journey history</Text>
         </View>
@@ -102,8 +108,8 @@ const History = () => {
           </View>
         </View>
         <Gap height={20} />
-      </View>
-    </ScrollView>
+      </ScrollView>
+    </View>
   );
 };
 
@@ -111,7 +117,7 @@ export default History;
 
 const styles = StyleSheet.create({
   titleContainer: {
-    paddingVertical: 30,
+    paddingVertical: 10,
     alignItems: 'center',
   },
   title: {
