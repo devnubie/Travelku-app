@@ -10,6 +10,11 @@ import {
   SplashScreen,
   SuccessSignUp,
   Agent,
+  MyTicket,
+  BuyTicket,
+  DetailAgent,
+  CheckOut,
+  CheckOutSuccess,
 } from '../pages';
 import BottomNavigator from '../components/molecules/BottomNavigator';
 
@@ -19,11 +24,7 @@ const Tab = createBottomTabNavigator();
 const MainApp = () => {
   return (
     <Tab.Navigator tabBar={props => <BottomNavigator {...props} />}>
-      <Tab.Screen 
-      name="Home" 
-      component={Home} 
-      options={{headerShown: false}} 
-      />
+      <Tab.Screen name="Home" component={Home} options={{headerShown: false}} />
       <Tab.Screen
         name="History"
         component={History}
@@ -72,6 +73,31 @@ const Router = () => {
       <Stack.Screen
         name="Agent"
         component={Agent}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="MyTicket"
+        component={MyTicket}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="BuyTicket"
+        component={BuyTicket}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="DetailAgent"
+        component={DetailAgent}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="CheckOut"
+        component={CheckOut}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="CheckOutSuccess"
+        component={CheckOutSuccess}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

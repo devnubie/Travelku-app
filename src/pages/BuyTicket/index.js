@@ -3,113 +3,103 @@ import {
   StyleSheet,
   Text,
   View,
-  Image,
   TouchableOpacity,
+  Image,
   ScrollView,
 } from 'react-native';
-import {HeaderBlue} from '../../components';
-import LogoBaraya from '../../assets/img/baraya.png';
+import {Gap, HeaderBlue} from '../../components';
+import Bandung from '../../assets/img/bandung.png';
 
-const Agent = ({navigation}) => {
+const BuyTicket = ({navigation}) => {
   return (
-    <View style={styles.page}>
+    <View style={{flex: 1}}>
       <HeaderBlue
-        title="Agent"
+        title="Buy Your Ticket"
         titleColor="#355c7d"
         onBack={() => navigation.goBack()}
       />
       <View style={styles.titleContainer}>
-        <Text style={styles.title}>Our Partner</Text>
+        <Text style={styles.title}>Choose Your destination</Text>
       </View>
-
-      <View style={styles.container}>
-        <ScrollView>
-          {/* List Agent */}
-          <TouchableOpacity onPress={() => navigation.navigate('DetailAgent')}>
+      {/* <Gap height={10} /> */}
+      <ScrollView>
+        <View style={styles.container}>
+          <TouchableOpacity onPress={() => navigation.navigate('CheckOut')}>
             <View style={styles.box}>
               <View style={styles.containerAgent}>
-                <Image source={LogoBaraya} />
+                <Image style={styles.img} source={Bandung} />
               </View>
               <View style={styles.containerContent}>
-                <Text style={styles.content}>Baraya Travel</Text>
-                <Text style={styles.content}>Jln.soekarno hatta,bandung</Text>
+                <Text style={styles.content}>Jakarta-Bandung</Text>
+                <Text style={styles.content}>22 November 2022</Text>
+                <Text style={styles.content}>On Board : 19.00</Text>
               </View>
             </View>
           </TouchableOpacity>
           <TouchableOpacity>
             <View style={styles.box}>
               <View style={styles.containerAgent}>
-                <Image source={LogoBaraya} />
+                <Image style={styles.img} source={Bandung} />
               </View>
               <View style={styles.containerContent}>
-                <Text style={styles.content}>Baraya Travel</Text>
-                <Text style={styles.content}>Jln.soekarno hatta,bandung</Text>
+                <Text style={styles.content}>Jakarta-Bandung</Text>
+                <Text style={styles.content}>22 November 2022</Text>
+                <Text style={styles.content}>On Board : 19.00</Text>
               </View>
             </View>
           </TouchableOpacity>
           <TouchableOpacity>
             <View style={styles.box}>
               <View style={styles.containerAgent}>
-                <Image source={LogoBaraya} />
+                <Image style={styles.img} source={Bandung} />
               </View>
               <View style={styles.containerContent}>
-                <Text style={styles.content}>Baraya Travel</Text>
-                <Text style={styles.content}>Jln.soekarno hatta,bandung</Text>
+                <Text style={styles.content}>Jakarta-Bandung</Text>
+                <Text style={styles.content}>22 November 2022</Text>
+                <Text style={styles.content}>On Board : 19.00</Text>
               </View>
             </View>
           </TouchableOpacity>
           <TouchableOpacity>
             <View style={styles.box}>
               <View style={styles.containerAgent}>
-                <Image source={LogoBaraya} />
+                <Image style={styles.img} source={Bandung} />
               </View>
               <View style={styles.containerContent}>
-                <Text style={styles.content}>Baraya Travel</Text>
-                <Text style={styles.content}>Jln.soekarno hatta,bandung</Text>
+                <Text style={styles.content}>Jakarta-Bandung</Text>
+                <Text style={styles.content}>22 November 2022</Text>
+                <Text style={styles.content}>On Board : 19.00</Text>
               </View>
             </View>
           </TouchableOpacity>
           <TouchableOpacity>
             <View style={styles.box}>
               <View style={styles.containerAgent}>
-                <Image source={LogoBaraya} />
+                <Image style={styles.img} source={Bandung} />
               </View>
               <View style={styles.containerContent}>
-                <Text style={styles.content}>Baraya Travel</Text>
-                <Text style={styles.content}>Jln.soekarno hatta,bandung</Text>
+                <Text style={styles.content}>Jakarta-Bandung</Text>
+                <Text style={styles.content}>22 November 2022</Text>
+                <Text style={styles.content}>On Board : 19.00</Text>
               </View>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity>
-            <View style={styles.box}>
-              <View style={styles.containerAgent}>
-                <Image source={LogoBaraya} />
-              </View>
-              <View style={styles.containerContent}>
-                <Text style={styles.content}>Baraya Travel</Text>
-                <Text style={styles.content}>Jln.soekarno hatta,bandung</Text>
-              </View>
-            </View>
-          </TouchableOpacity>
-        </ScrollView>
-      </View>
+        </View>
+      </ScrollView>
     </View>
   );
 };
 
-export default Agent;
+export default BuyTicket;
 
 const styles = StyleSheet.create({
-  page: {
-    flex: 1,
-  },
   titleContainer: {
     marginHorizontal: 30,
     paddingBottom: 10,
     marginTop: -10,
   },
   title: {
-    fontSize: 24,
+    fontSize: 20,
     color: '#355c7d',
     fontWeight: '400',
   },
@@ -153,5 +143,9 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 16,
     fontWeight: 'bold',
+  },
+  img: {
+    maxHeight: 50,
+    maxWidth: 50,
   },
 });
