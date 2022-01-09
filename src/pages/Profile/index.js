@@ -5,11 +5,11 @@ import IcProfile from '../../assets/img/ic-profile-person.png';
 import IcAddPhoto from '../../assets/img/ic-camera-mini.png';
 import {Button, Gap} from '../../components';
 
-const Profile = () => {
+const Profile = ({navigation}) => {
   return (
     <View style={styles.page}>
       {/*  Header */}
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.goBack()}>
         <View style={styles.headerContainer}>
           <View style={styles.imgContainer}>
             <Image source={IcBackBlue} />
@@ -52,7 +52,7 @@ const Profile = () => {
       {/* content */}
       <View
         style={{
-          marginHorizontal:30,
+          marginHorizontal: 30,
           marginBottom: 20,
         }}>
         <Button text="Logout" textColor="#FFFFFF" color="#FF2D2D" />

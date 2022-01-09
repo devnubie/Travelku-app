@@ -6,7 +6,7 @@ const HeaderBlue = ({title,titleColor="black",onBack}) => {
         <View style={styles.container}>
             {
                 onBack && (
-                    <TouchableOpacity activeOpacity={0.5}>
+                    <TouchableOpacity activeOpacity={0.5} onPress={onBack}>
                     <View style={styles.backIcon}>
                     <Image source={require('../../../assets/img/ic-back-blue.png')}/>
                     </View>
