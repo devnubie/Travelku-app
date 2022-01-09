@@ -63,7 +63,7 @@ const Home = ({navigation}) => {
           borderBottomLeftRadius: 10,
           borderBottomRightRadius: 10,
           borderColor: 'black',
-          borderWidth: 0.5
+          borderWidth: 0.5,
         }}>
         {/* agent */}
         <TouchableOpacity onPress={() => navigation.navigate('Agent')}>
@@ -84,7 +84,7 @@ const Home = ({navigation}) => {
         </TouchableOpacity>
 
         {/* my ticket */}
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('MyTicket')}>
           <View style={{alignItems: 'center'}}>
             <View
               style={{
@@ -102,7 +102,7 @@ const Home = ({navigation}) => {
         </TouchableOpacity>
 
         {/* buy Ticket */}
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('BuyTicket')}>
           <View style={{alignItems: 'center'}}>
             <View
               style={{
